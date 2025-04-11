@@ -1,7 +1,9 @@
-module co.edu.poli.proyecto {
+module co.edu.poli.JuanaDanielaNaranjoAlipio {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens co.edu.poli.controlador to javafx.fxml;
-    opens co.edu.poli.vista to javafx.graphics, javafx.fxml;
+    opens co.edu.poli.JuanaDanielaNaranjoAlipio to javafx.fxml;
+    opens co.edu.poli.JuanaDanielaNaranjoAlipio.Controlador to javafx.fxml ;
+    exports co.edu.poli.JuanaDanielaNaranjoAlipio.vista;
+    exports co.edu.poli.JuanaDanielaNaranjoAlipio.Controlador;
 }
